@@ -5,8 +5,8 @@ function KegDetails(props){
   const { keg } = props;
   return(
     <>
-      <h1>{keg.brand}</h1>
-      <h2>{keg.flavor}</h2>
+      <h1>{keg.flavor} | {keg.brand}</h1>
+      <img src={keg.imgUrl} alt="brand logo" />
       <h3>Alcohol/Vol {keg.abv}%</h3>
       <h4>{keg.remainingPints}/{keg.maxPints}</h4>
       <button onClick={props.onClickingEdit}>Update Keg</button>

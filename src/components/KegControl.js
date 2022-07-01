@@ -46,7 +46,7 @@ class KegControl extends React.Component {
 
   handleChangingSelectedKeg = (id) => {
     const selectedKeg = this.state.mainKegList.find(keg => keg.id === id);
-    this.setState({ selectedKeg: selectedKeg});
+    this.setState({selectedKeg: selectedKeg});
   }
 
   render(){
@@ -55,7 +55,7 @@ class KegControl extends React.Component {
 
     if(this.state.selectedKeg != null) {
       visibleState = <KegDetails 
-        keg = {this.state.selectedGame}
+        keg = {this.state.selectedKeg}
       />
       buttonText = "Return to Keg List"
     } else if(this.state.formVisible){
@@ -65,7 +65,7 @@ class KegControl extends React.Component {
       visibleState = <KegList 
       kegList={this.state.mainKegList}
       onKegSelection={this.handleChangingSelectedKeg}
-      />;
+      />
       buttonText="Add Keg";
     }
     return(

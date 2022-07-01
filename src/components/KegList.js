@@ -7,7 +7,6 @@ function KegList(props){
     display: "grid",
     gridGap: '2em',
     gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-    // flexWrap: 'wrap',
     width: '100%',
     justifyContent: 'space-evenly'
   }
@@ -17,7 +16,7 @@ return(
     .sort((a,b) => a.brand > b.brand ? 1 : -1)
     .map((keg) =>
       <Keg
-        whenKegClicked = {props.onKegSelection}
+        whenKegClicked = { props.onKegSelection }
         imgUrl={keg.imgUrl}
         brand={keg.brand}
         flavor={keg.flavor}
