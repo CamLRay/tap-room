@@ -17,7 +17,7 @@ function Keg(props){
       <p>{props.brand}</p>
       <img style={kegImageStyle} src={props.imgUrl} alt="Logo" />
       <p>{props.flavor} - ABV {props.abv}%</p>
-      <p>{props.remainingPints}/{props.maxPints}</p>
+      <p>{props.remainingPints}/{props.maxPints} Pints</p>
       <button>Poured a pint</button>
     </div>
   )
@@ -25,6 +25,7 @@ function Keg(props){
 
 Keg.propTypes = {
   imgUrl: PropTypes.string,
+  abv: PropTypes.number,
   brand: PropTypes.string,
   flavor: PropTypes.string,
   remainingPints: PropTypes.number,
