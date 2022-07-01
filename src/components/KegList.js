@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function KegList(props){
   const kegListContainerStyle = {
     display: "grid",
-    gridGap: '2em',
+    gridGap: '1em',
     gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
     width: '100%',
     justifyContent: 'space-evenly'
@@ -17,8 +17,10 @@ return(
     .map((keg) =>
       <Keg
         whenKegClicked = { props.onKegSelection }
+        whenDecrementClicked = {props.onDecrementPints}
         imgUrl={keg.imgUrl}
         brand={keg.brand}
+        price={keg.price}
         flavor={keg.flavor}
         abv={keg.abv}
         remainingPints={keg.remainingPints}
@@ -33,7 +35,8 @@ return(
 
 KegList.propTypes = {
   kegList: PropTypes.array,
-  onKegSelection: PropTypes.func
+  onKegSelection: PropTypes.func,
+  onDecrementPints: PropTypes.func
 }
 
 export default KegList;

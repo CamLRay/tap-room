@@ -10,6 +10,7 @@ function CreateKegForm(props) {
       imgUrl: event.target.imgUrl.value,
       brand: event.target.brand.value,
       flavor: event.target.flavor.value,
+      price: parseInt(event.target.price.value),
       abv: parseInt(event.target.abv.value),
       maxPints: parseInt(event.target.maxPints.value),
       remainingPints: parseInt(event.target.remainingPints.value),
