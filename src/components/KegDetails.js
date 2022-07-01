@@ -9,7 +9,7 @@ function KegDetails(props){
       <h2>{keg.flavor}</h2>
       <h3>Alcohol/Vol {keg.abv}%</h3>
       <h4>{keg.remainingPints}/{keg.maxPints}</h4>
-      <button onClick={props.onClickingEdit}>Update Game</button>
+      <button onClick={props.onClickingEdit}>Update Keg</button>
     </>
   )
 }

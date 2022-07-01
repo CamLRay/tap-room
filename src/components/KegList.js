@@ -1,5 +1,6 @@
 import React from "react";
 import Keg from "./Keg";
+import PropTypes from 'prop-types';
 
 function KegList(props){
   const kegListContainerStyle = {
@@ -16,6 +17,7 @@ return(
     .sort((a,b) => a.brand > b.brand ? 1 : -1)
     .map((keg) =>
       <Keg
+        whenKegClicked = {props.onKegSelection}
         imgUrl={keg.imgUrl}
         brand={keg.brand}
         flavor={keg.flavor}
@@ -28,6 +30,11 @@ return(
       )}
   </div>
 )
+}
+
+KegList.propTypes = {
+  kegList: PropTypes.array,
+  onKegSelection: PropTypes.func
 }
 
 export default KegList;

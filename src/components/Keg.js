@@ -13,7 +13,7 @@ function Keg(props){
     justifyContent: 'space-between'
   }
   return(
-    <div style={kegComponentStyle}>
+    <div style={kegComponentStyle} onClick = {() => props.whenKegClicked(props.id)}>
       <p>{props.brand}</p>
       <img style={kegImageStyle} src={props.imgUrl} alt="Logo" />
       <p>{props.flavor} - ABV {props.abv}%</p>
@@ -29,7 +29,9 @@ Keg.propTypes = {
   brand: PropTypes.string,
   flavor: PropTypes.string,
   remainingPints: PropTypes.number,
-  maxPints: PropTypes.number
+  maxPints: PropTypes.number,
+  whenKegClicked: PropTypes.func,
+  id: PropTypes.string
 }
 
 export default Keg;
