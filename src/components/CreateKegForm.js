@@ -4,14 +4,15 @@ import PropTypes from 'prop-types';
 import KegForm from "./KegForm";
 
 function CreateKegForm(props) {
-  function handleCreateKegFormSubmission(e) {
-    e.preventDefaul();
+  function handleCreateKegFormSubmission(event) {
+    event.preventDefault();
     props.onKegCreation({
-      brand: e.target.brand.value,
-      flavor: e.target.flavor.value,
-      abv: parseInt(e.target.abv.value),
-      maxPints: parseInt(e.target.maxPints.value),
-      remainingPints: parseInt(e.target.remainingPints.value),
+      imgUrl: event.target.imgUrl.value,
+      brand: event.target.brand.value,
+      flavor: event.target.flavor.value,
+      abv: parseInt(event.target.abv.value),
+      maxPints: parseInt(event.target.maxPints.value),
+      remainingPints: parseInt(event.target.remainingPints.value),
       id: v4()
     })
   }

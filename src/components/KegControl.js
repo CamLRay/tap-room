@@ -9,7 +9,7 @@ class KegControl extends React.Component {
     super(props);
     this.state = {
       formVisible: false,
-      MainKegList: [],
+      mainKegList: [],
 
     }
   }
@@ -28,12 +28,12 @@ class KegControl extends React.Component {
     let visibleState = null;
     let buttonText=null;
     if(this.state.formVisible){
-      visibleState = <CreateKegForm />;
+      visibleState = <CreateKegForm onKegCreation={this.handleAddingNewKegToList} />;
       
       buttonText="Return to Keg List";
 
     } else {
-      visibleState = <KegList kegList={this.state.MainKegList} />;
+      visibleState = <KegList kegList={this.state.mainKegList} />;
       buttonText="Add Keg";
     }
     return(

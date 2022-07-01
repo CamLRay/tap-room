@@ -7,6 +7,7 @@ return(
     <form onSubmit={props.formSubmissionHandler}>
         <input type='text' name='brand' placeholder='Brand Name' />
         <input type='text' name='flavor' placeholder='Keg Flavor' />
+        <input type='text' name='imgUrl' placeholder='Brand Image Url' />
         <input type='number' name='abv' placeholder='abv %' />
         <input type='number' name='maxPints' placeholder='Keg Size in pints' />
         <input type='number' name='remainingPints' placeholder='Remaining Pints' />
