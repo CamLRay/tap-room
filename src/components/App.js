@@ -1,8 +1,10 @@
 import '../App.css';
+import KegControl from './KegControl';
 
 function App() {
   return (
     <>
+      <KegControl />
     </>
   );
 }
