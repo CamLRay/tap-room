@@ -14,6 +14,19 @@ class KegControl extends React.Component {
     }
   }
 
+  componentDidMount(){
+    const data = localStorage.getItem('MAIN_KEG_LIST');
+    if(data !== null){
+      this.setState({mainKegList: JSON.parse(data)})
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    if(prevState.mainKegList !== this.state.mainKegList){
+      localStorage.setItem('MAIN_KEG_LIST', JSON.stringify(this.state.mainKegList));
+    }
+  }
+
   handleClick = () => {
     console.log('clicked!')
     this.setState(prevState => ({formVisible: !prevState.formVisible}));

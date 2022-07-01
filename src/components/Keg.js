@@ -2,9 +2,12 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 function Keg(props){
+  const kegImageStyle = {
+    width: '5%'
+  }
   return(
     <>
-      <img src={props.imgUrl} alt="Logo" />
+      <img style={kegImageStyle} src={props.imgUrl} alt="Logo" />
       <p>{props.brand} - {props.flavor}</p>
       <p>{props.remainingPints}/{props.maxPints}</p>
       <button>Poured a pint</button>
