@@ -5,13 +5,13 @@ function KegForm(props){
   return(
     <>
       <form onSubmit={props.formSubmissionHandler}>
-          <input type='text' name='brand' placeholder='Brand Name' />
-          <input type='text' name='flavor' placeholder='Keg Flavor' />
-          <input type='text' name='imgUrl' placeholder='Brand Image Url' />
-          <input type='number' name='price' placeholder='pint price' />
-          <input type='number' name='abv' placeholder='abv %' />
-          <input type='number' name='maxPints' placeholder='Keg Size in pints' />
-          <input type='number' name='remainingPints' placeholder='Remaining Pints' />
+          <input type='text' name='brand' placeholder='Brand Name' required/>
+          <input type='text' name='flavor' placeholder='Keg Flavor' required/>
+          <input type='text' name='imgUrl' placeholder='Brand Image Url' required/>
+          <input type='number' name='price' placeholder='pint price' required/>
+          <input type='number' name='abv' placeholder='abv %' required/>
+          <input type='number' name='maxPints' placeholder='Keg Size in pints' required/>
+          <input type='number' name='remainingPints' placeholder='Remaining Pints' required/>
           <button type='submit'>{props.buttonText}</button>
         </form>
     </>

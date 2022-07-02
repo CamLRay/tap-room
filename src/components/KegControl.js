@@ -82,13 +82,15 @@ class KegControl extends React.Component {
 
   handleDecrementingPints = (id) => {
     const targetKeg = this.state.mainKegList.find(keg => keg.id === id);
-    const updatedTargetKeg = {...targetKeg, remainingPints: targetKeg.remainingPints - 1}
-    const editedMainKegList = this.state.mainKegList
-      .filter(keg => keg.id !== id)
-      .concat(updatedTargetKeg);
-    this.setState({
-      mainKegList: editedMainKegList
-    })
+    if(targetKeg.remainingPints > 0){
+      const updatedTargetKeg = {...targetKeg, remainingPints: targetKeg.remainingPints - 1}
+      const editedMainKegList = this.state.mainKegList
+        .filter(keg => keg.id !== id)
+        .concat(updatedTargetKeg);
+      this.setState({
+        mainKegList: editedMainKegList
+      })
+    }
   }
 
   render(){

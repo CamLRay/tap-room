@@ -13,7 +13,7 @@ function KegList(props){
 return(
   <div style={kegListContainerStyle}>
   {props.kegList
-    .sort((a,b) => a.brand > b.brand ? 1 : -1)
+    .sort((a,b) => a.flavor > b.flavor ? 1 : -1)
     .map((keg) =>
       <Keg
         whenKegClicked = { props.onKegSelection }
