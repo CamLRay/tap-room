@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 
 function KegDetails(props){
   const { keg, onClickingDelete } = props;
+
+  const deleteButtonStyle = {
+    backgroundColor: 'red'
+  }
+
   return(
     <>
       <h1>{keg.flavor} | {keg.brand}</h1>
@@ -10,7 +15,7 @@ function KegDetails(props){
       <h3>Alcohol/Vol {keg.abv}%</h3>
       <h4>{keg.remainingPints}/{keg.maxPints}</h4>
       <button onClick={props.onClickingEdit}>Update Keg</button>
-      <button onClick={() => onClickingDelete(keg.id)}>Remove Keg</button>
+      <button style={deleteButtonStyle} onClick={() => onClickingDelete(keg.id)}>&times; Remove Keg</button>
     </>
   )
 }
