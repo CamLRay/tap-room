@@ -18,6 +18,7 @@
 tap room allows a bar owner or employee to add kegs to a list of kegs and each time they poor a drink, the amount of drinks left in the keg decrements. This is a brief demonstration of React state using classes extending react.components. Here you see prop drilling and shared state
 
 ## Setup/Installation Requirements
+Visit the [Live Site](https://camlray.github.io/tap-room/) or
 
 * Requires Node.js and Node Package Manager
 * Clone the tap-room repository to your computer by typing the following in the terminal.
