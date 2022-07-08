@@ -15,7 +15,13 @@
 
 ## Description
 
-tap room allows a bar owner or employee to add kegs to a list of kegs and each time they poor a drink, the amount of drinks left in the keg decrements. This is a brief demonstration of React state using classes extending react.components. Here you see prop drilling and shared state
+Tap room allows a bar owner or employee to add kegs to a list of kegs and each time they poor a drink, the amount of drinks left in the keg decrements. This is a brief demonstration of React state using classes extending react.components. Here you see prop drilling and shared state.
+
+
+### Component tree diagram
+The first thing I did for the project was make the component tree diagram to visualize the flow of data. You can see it here:
+![](imgs/ComponentTree.jpg)
+
 
 ## Setup/Installation Requirements
 
@@ -25,7 +31,9 @@ tap room allows a bar owner or employee to add kegs to a list of kegs and each t
 $ git clone https://github.com/CamLRay/tap-room.git
 ```
 * navigate to the root directory and start the app by entering the following in the terminal 
+
 ```
+$ npm run build
 $ npm run start
 ```
 
