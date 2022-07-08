@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tap-room/static/css/main.bce4e102.css",
-    "main.js": "/tap-room/static/js/main.26c883b1.js",
+    "main.css": "/tap-room/static/css/main.fd10d701.css",
+    "main.js": "/tap-room/static/js/main.64e69cda.js",
     "static/js/787.477a4ac6.chunk.js": "/tap-room/static/js/787.477a4ac6.chunk.js",
     "index.html": "/tap-room/index.html",
-    "main.bce4e102.css.map": "/tap-room/static/css/main.bce4e102.css.map",
-    "main.26c883b1.js.map": "/tap-room/static/js/main.26c883b1.js.map",
+    "main.fd10d701.css.map": "/tap-room/static/css/main.fd10d701.css.map",
+    "main.64e69cda.js.map": "/tap-room/static/js/main.64e69cda.js.map",
     "787.477a4ac6.chunk.js.map": "/tap-room/static/js/787.477a4ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bce4e102.css",
-    "static/js/main.26c883b1.js"
+    "static/css/main.fd10d701.css",
+    "static/js/main.64e69cda.js"
   ]
 }
