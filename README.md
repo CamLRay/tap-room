@@ -34,7 +34,7 @@ $ git clone https://github.com/CamLRay/tap-room.git
 * navigate to the root directory and start the app by entering the following in the terminal 
 
 ```
-$ npm run build
+$ npm install
 $ npm run start
 ```
 
