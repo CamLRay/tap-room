@@ -65,7 +65,6 @@ class KegControl extends React.Component {
   }
 
   handleEditClick = () => {
-    console.log("edit click")
     this.setState({editing: true})
   }
 
@@ -97,7 +96,9 @@ class KegControl extends React.Component {
     let visibleState = null;
     let buttonText=null;
     if (this.state.editing){
+      
       visibleState = <EditKegForm game={this.state.selectedKeg} 
+      keg = {this.state.selectedKeg}
       onEditKeg={this.handleEditingKegInList}/>
       buttonText="Return to Keg"
     } else if(this.state.selectedKeg != null) {

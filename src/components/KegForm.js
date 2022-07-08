@@ -8,10 +8,10 @@ function KegForm(props){
           <input type='text' name='brand' placeholder='Brand Name' required/>
           <input type='text' name='flavor' placeholder='Keg Flavor' required/>
           <input type='text' name='imgUrl' placeholder='Brand Image Url' required/>
-          <input type='number' name='price' placeholder='pint price' required/>
-          <input type='number' name='abv' placeholder='abv %' required/>
-          <input type='number' name='maxPints' placeholder='Keg Size in pints' required/>
-          <input type='number' name='remainingPints' placeholder='Remaining Pints' required/>
+          <input type='number' min="0" name='price' placeholder='pint price' required/>
+          <input type='number' min="0" name='abv' placeholder='abv %' required/>
+          <input type='number' min="0" name='maxPints' placeholder='Keg Size in pints' required/>
+          <input type='number' min="0" name='remainingPints' placeholder='Remaining Pints' required/>
           <button type='submit'>{props.buttonText}</button>
         </form>
     </>
