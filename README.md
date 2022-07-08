@@ -24,6 +24,7 @@ The first thing I did for the project was make the component tree diagram to vis
 
 
 ## Setup/Installation Requirements
+Visit the [Live Site](https://camlray.github.io/tap-room/) or
 
 * Requires Node.js and Node Package Manager
 * Clone the tap-room repository to your computer by typing the following in the terminal.
